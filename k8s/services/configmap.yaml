@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ecommerce-config
+  namespace: default
+data:
+  NODE_ENV: "production"
+  AUTH_PORT: "3001"
+  PRODUCT_PORT: "3002"
+  ORDER_PORT: "3003"
+  PAYMENT_PORT: "3004"
+  GATEWAY_PORT: "3000"
+  AUTH_SERVICE_URL: "http://auth-service:3001"
+  PRODUCT_SERVICE_URL: "http://product-service:3002"
+  ORDER_SERVICE_URL: "http://order-service:3003"
+  PAYMENT_SERVICE_URL: "http://payment-service:3004"
+  FRONTEND_URL: "http://8.232.48.40"
